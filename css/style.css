@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.footer{
+	background-color: #050505;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+.footer__panel {
+	overflow: hidden;
+
+}
+.footer__panel span{
+	line-height: 50px;
+	color: #fff;
+	float: left;
+	margin: 0 10px;
+}
+#bgcRed{
+	margin-left: 5px;
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	float: left;
+}
+#bgcGreen{
+	margin-left: 5px;
+	height: 50px;
+	width: 50px;
+	background-color: green;
+	float: left;
+}
+#bgcYellow{
+	margin-left: 5px;
+	height: 50px;
+	width: 50px;
+	background-color: yellow;
+	float: left;
+}
+#bgcWhite{
+	margin-left: 5px;
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	float: left;
+}
+#colRed{
+	margin-left: 5px;
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	float: left;
+}
+#colGreen{
+	margin-left: 5px;
+	height: 50px;
+	width: 50px;
+	background-color: green;
+	float: left;
+}
+#colYellow{
+	margin-left: 5px;
+	height: 50px;
+	width: 50px;
+	background-color: yellow;
+	float: left;
+}
+#colWhite{
+	margin-left: 5px;
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	float: left;
+}

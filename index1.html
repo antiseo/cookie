@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<select name="" id="myColor" onchange="setColorCookie()">
+		<option value="Select color">Select color</option>
+		<option value="red">Red</option>
+		<option value="green">Green</option>
+	</select>
+	<script>
+		window.onload = function () {
+			if (document.cookie.length != 0) {
+				var nameValueArray = document.cookie.split("=");
+				$("body").css('background', nameValueArray[1]);
+				$("#myColor").val(nameValueArray[1])
+			}
+		}
+		function setColorCookie () 
+		{
+			var selectedColor = $("#myColor").val();
+			if(selectedColor != "Select color")
+			{
+				$("body").css('background', selectedColor);
+				document.cookie = "color="+selectedColor+";expires=Fri, 5 Aug 2019 01:00:00 UTC;";
+			}
+		}
+	</script>
+</body>
+</html>

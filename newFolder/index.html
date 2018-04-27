@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+<body>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas maxime tempora voluptatibus ducimus qui ad, excepturi unde delectus expedita, optio soluta doloribus eaque facilis sed quia nesciunt mollitia ut voluptatem!
+	<script>
+		window.onload = function () {
+			var cc = Cookies.get();
+			if (cc['background']) {
+				$("body").css('background', cc['background']);
+			}
+			if (cc['color']) {
+				$("body").css('color', cc['color']);
+			}
+		}
+	</script>
+</body>
+</html>
